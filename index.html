@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pancard</title>
+    <style>
+        .start table tbody tr{
+            margin: 0px;
+            color: white;
+            background-color: rgb(141,30,36);
+            text-align: center;
+        table td{
+            style="border: 1px solid grey;"
+        }
+        }   
+    </style>
+</head>
+<body style="background-color: rgb(254,255,213);"> 
+    <table style="background-color: rgb(141,30,36);text-align: center; width: 100%; color: white; border: 0;">
+            <tbody>
+                <tr >
+                    <td colspan="8"><b>Request For New PAN Card Or/And Changes Or Correction in PAN Data</b></td>
+                </tr>
+                <tr>
+                    <td><i>Fields marked with <span style="color: red;">*</span> (asterisk) are mandatory. . To avoid mistake(s), please refer <span style="text-decoration: underline; color: orange;">guidelines</span>  and <span style="text-decoration: underline; color: orange;">instructions</span> .</i>
+                    </td>
+                </tr>
+            </tbody>
+    </table>
+    <table style="border: 1px solid grey;border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red; width: 98%;">*</span><b>Whether citizen of India &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>
+                <label for="">Yes</label><input type="radio" name="citizen">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="">No</label><input type="radio" name="citizen">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;">*</span><b>Permanent Account Number (PAN)</b>                
+                <!-- <label for="">Yes</label><input type="radio" name="citizen"> -->
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <!-- <label for="">No</label><input type="radio" name="citizen"> -->
+                <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;"><input type="checkbox"></td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;">*</span><b>1.Name</b>                
+                <!-- <label for="">Yes</label><input type="radio" name="citizen"> -->
+                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                <!-- <label for="">No</label><input type="radio" name="citizen"> -->
+                <!-- <input type="text"> -->
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <b>Title</b> &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span style="color:grey;">
+                        Shri/Mr &nbsp;&nbsp;&nbsp;&nbsp;
+                        Smt/Mrs. &nbsp;&nbsp;&nbsp;&nbsp;
+                        Kumari/Ms &nbsp;&nbsp;&nbsp;&nbsp;
+                        <label for="">M/s</label>
+                        <input type="radio" checked>
+                    </span>                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <b>Name of the company</b>
+                    <br>
+                    <input type="text">               
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;">*</span><b> Name as you would like it printed on card</b>                
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span><i>Same as above </i>                
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span style="color: grey;"><b>2. Father's Name</b><i> (Even married women should give father's name only) </i></span>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;"><input type="checkbox"></td>
+                <td style="border: 1px solid grey; width:100%;" colspan="2"><span style="color: red;">*</span>
+                    <b>
+                        3. Date of Birth/Incorporation/Agreement/Partnership <br>
+                        or Trust Deed/Formation of Body of Individuals/ <br>
+                        Association of Persons
+                    </b>                
+                </td>
+                
+                <td style= "border: 1px solid grey;width:0%;" colspan="2">
+                    &nbsp;DD&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MM
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;YYYY
+                    <br>
+                    <select>
+                        <option value="">DD</option>
+                    </select>
+                    <select>
+                        <option value="">MM</option>
+                    </select>
+                    <input type="text" width="50">
+                </td>
+                <!-- <td style= "border: 1px solid grey;width:1000px;"></td> -->
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span style="color: grey;"><b>
+                        4. Gender
+                    </b></span>                
+                </td>
+                
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span style="color: grey;">
+                        Male <br>
+                        Female
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span style="color: grey;"><b>5. Photo Mismatch</b></span>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;"><input type="checkbox"></td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;">*</span>
+                    <span><b>
+                        7. Address for Communication
+                    </b></span>                
+                </td>
+                
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         Residential
+                        Office <input type="radio" checked>
+                    </span> 
+                </td>
+                
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Name of Office</b> <i>(to be filled only in case of office address)</i>
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked maxlength="75" size="64">
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Flat/Door/Block No.</b> 
+                    </span>                
+                </td>
+            
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Name of Premises/Building/Village</b> 
+                    </span>                
+                </td>
+            
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Road/Street/Lane/Post Office</b> 
+                    </span>                
+                </td>
+                
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Area/Locality/Taluka/Sub-Division</b> 
+                    </span>                
+                </td>
+
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Town/City/District</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text" checked>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        State/Union Territory</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <select>
+                            <option value="">--Please Select --</option>
+                         </select>
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        PIN</b> <i>(Indicating PIN is mandatory)</i> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="number" size="5">
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        Country</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                        <select>
+                           <option value="" disabled>--Please Select --</option>
+                        </select>
+                   </span>  
+                </td>
+            </tr>
+            <tr>
+                    <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                    <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                        <span><b>
+                            ZIP</b> 
+                        </span>                
+                    </td>
+                    <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                        <span>
+                             <input type="number" size="6" disabled>
+                        </span> 
+                    </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span style="color: grey;"><b>8. Office Address</b></span>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;" rowspan="3"><input type="checkbox"></td>
+                <td style="border: 1px solid grey; width:1000px;" rowspan="3" colspan="2"><span style="color: red;">*</span>
+                    <span><b>
+                        9. Telephone No.</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    Country code (ISD code) <br>
+                    <select>
+                        <option value="">-- Please Select --</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;">
+                    <input type="radio" name="xx">
+                    Mobile No.
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;">
+                    <input type="radio" name="xx">
+                    Telephone No.
+                    
+                </td>
+            </tr>
+            <tr>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;">
+                    Area/STD Code <br>
+                    <input type="text">
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;">
+                    Telephone No./Mobile No. <br>
+                    <input type="text">
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        E-mail ID</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="email">
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span style="color: grey;"><b>10. AADHAAR number (if allotted)</b></span>
+                
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        11. GSTN</b> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span>
+                         <input type="text">
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;"><input type="checkbox"></td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span><b>12. Mention other Permanent Account Numbers (PANs) if any,inadvertently allotted to you.</b></span>
+                    <span style="text-decoration: underline;"><b>Submit proof of surrendered PAN(s) along with the application.</b></span>
+                
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        PAN1</b> <input type="text"> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span><b>
+                        PAN2</b> <input type="text"> 
+                    </span> 
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:1000px;" colspan="2"><span style="color: red;"></span>
+                    <span><b>
+                        PAN3</b> <input type="text"> 
+                    </span>                
+                </td>
+                <td style= "border: 1px solid grey;width:1000px; border-collapse: collapse;" colspan="2">
+                    <span><b>
+                        PAN4</b> <input type="text"> 
+                    </span> 
+                </td>
+                
+            </tr>
+            <tr>
+                <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+                <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                    <span><b>13. Verification</b></span>
+                
+                </td>
+            </tr>
+        </tbody>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span>
+                    I/We &nbsp;
+                    <input type="text" name="" id="">, the applicant,in the capacity of &nbsp;
+                    <select name="" id="">
+                        <option value="">-- Please Select --</option>
+                    </select> &nbsp;
+                    do hereby declare that what is stated above is true to the best of my information and belief. <br>
+                    I have enclosed <input type="text">  (number of documents) in support of proposed changes/corrections.
+
+                </span>
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span>Place &nbsp;&nbsp;</span>
+                <input type="text">
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DDMMYYYY</span> <br>
+                Verified today, the 28 -07 -2022
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span>I/We have enclosed </span> <br>
+                <select name="" id="">
+                    <option value="">--Please Select --</option>
+                </select> <br>
+                as proof of identity and <br>
+                <select name="" id="">
+                    <option value="">--Please Select --</option>
+                </select> <br>
+                as proof of address and
+                <select name="" id="" >
+                    <option value="">--Please Select --</option>
+                </select> &nbsp;
+                as proof of PAN allotted.
+
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span><b>Whether you wish to have?</b> &nbsp;&nbsp;</span>
+                <input type="radio" name="yy"> Physical PAN Card & e-PAN Card  &nbsp;&nbsp;
+                <input type="radio" name="yy"> Only e-PAN Card   &nbsp;&nbsp;     
+                <span style="text-decoration: underline;"><b><i>Fees Applicable</i></b></span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span><b>Other Details</b> &nbsp;&nbsp;</span>
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;">&nbsp;</td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span><b>1. Payment Details</b> &nbsp;&nbsp;</span>
+            
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 35px;border: 1px solid grey;"><input type="radio"></td>
+            <td style="border: 1px solid grey; width:2000px;" colspan="4"><span style="color: red;"></span>
+                <span><b>Online Payment</b> &nbsp;&nbsp;</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            <span>For Paperless PAN Application: &nbsp;&nbsp;</span>
+            <input type="radio" name="ff" checked> Yes &nbsp;&nbsp;
+            <input type="radio" name="ff"> No
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            <input type="radio" checked> DSC &nbsp; 
+            <select name="" id="">
+                <option value="">Authorized Signatory</option>
+            </select>&nbsp; &nbsp; 
+            <span style="color: rgba(80, 8, 8, 0.967); text-decoration: underline;"> Guidelines for DSC user</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            Upload Signature &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="file"> 
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            Upload Document &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; 
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+            <input type="file"> 
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            <a href="#"><img src="dig.png" alt=""></a>
+            </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid grey; width:2000px;" colspan="5"><span style="color: red;"></span>
+            ALREADY UPLOADED SIGNATURE:<input type="text"><br>
+            ALREADY UPLOADED DOCUMENTS:<textarea rows="7" cols="40"></textarea> <input type="button" value="Submit">
+            </td>
+        </tr>
+    </tbody>
+    </table>
+    
+    
+</body>
+</html>
